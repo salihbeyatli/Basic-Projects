@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0a192f;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;
+}
+  .autocomplete {
+    position: relative;
+    display: inline-block;
+    width:300px;
+  }
+  input {
+    border: none;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #64ffda;
+    border-radius: 4px;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+  }
+  
+  input[type=text] {
+    background-color: transparent;
+    width: 100%;
+    border:1px solid #a8b2d1;
+    color: #64ffda;
+    border-radius: 5px 0px 0px 5px;
+  }
+  input[type=text]:focus {
+    border:1px solid #64ffda;
+    outline: none !important;
+  }
+  input[type=submit] {
+    background-color: #64ffda;
+    color: #000;
+    cursor: pointer;
+    margin-left:-3px;
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.2s ease;
+  }
+  input[type=submit]:hover {
+    background-color: transparent;
+    color: #fff;
+    border:1px solid #64ffda;
+  }
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid #3f3f3f;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #272727; 
+    border-bottom: 1px solid #353535; 
+  }
+  
+  .autocomplete-items div:hover {
+    background-color: #64ffda; 
+    color:#000
+  }
+  
+  .autocomplete-active {
+    background-color: #64ffda !important; 
+    color: #000; 
+  }
